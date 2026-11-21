@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spidey Burger</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon">🔥</span>
+        <span class="logo-text">spider</span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+        <li><a href="#menu" class="nav-link">القائمة</a></li>
+        <li><a href="#offers" class="nav-link">العروض</a></li>
+        <li><a href="#about" class="nav-link">من نحن</a></li>
+        <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+      </ul>
+
+      <a href="#order" class="nav-cta">اطلب الآن</a>
+
+      <button class="hamburger" id="hamburger" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">FLAME</div>
+    <div class="hero-content">
+      <div class="hero-badge">🔥 الأكثر مبيعاً</div>
+      <h1 class="hero-title">
+        <span class="line">A fiery taste</span>
+        <span class="line accent">Madness</span>
+        <span class="line">In you</span>
+      </h1>
+      <p class="hero-desc">وجبات طازجة، مكونات فاخرة، وسرعة خدمة لا تُصدق. استمتع بتجربة لا تُنسى في كل قضمة.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary">استكشف القائمة</a>
+        <a href="#offers" class="btn btn-outline">العروض الحصرية</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="50000">0</span><span>+</span><p>عميل سعيد</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="120">0</span><span>+</span><p>صنف لذيذ</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="15">0</span><span> دقيقة</span><p>متوسط التوصيل</p></div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-img-wrapper">
+        <div class="hero-glow"></div>
+        <div class="hero-food-emoji">🍔</div>
+        <div class="floating-tag tag1">🍟 بطاطس مقرمشة</div>
+        <div class="floating-tag tag2">🥤 مشروب مجاني</div>
+        <div class="floating-tag tag3">⭐ 4.9 تقييم</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+      <p>اسحب للأسفل</p>
+    </div>
+  </section>
+
+  <!-- ========== MENU ========== -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">قائمتنا</p>
+        <h2 class="section-title">اختر <span class="accent">الأفضل</span></h2>
+        <p class="section-sub">كل صنف مُعدّ بعناية فائقة لضمان أفضل تجربة</p>
+      </div>
+
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="burgers">برجر</button>
+        <button class="filter-btn" data-filter="chicken">دجاج</button>
+        <button class="filter-btn" data-filter="sides">إضافات</button>
+        <button class="filter-btn" data-filter="drinks">مشروبات</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+
+        <div class="menu-card" data-category="burgers">
+          <div class="card-badge">الأكثر طلباً</div>
+          <div class="card-img">🍔</div>
+          <div class="card-body">
+            <h3>فلايم برجر</h3>
+            <p>لحم أنجوس طازج، جبن مذاب، صوص سري لا تُقاوم</p>
+            <div class="card-footer">
+              <span class="price">89 <small>جنيه</small></span>
+              <button class="add-btn"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="burgers">
+          <div class="card-badge hot">🌶️ حار</div>
+          <div class="card-img">
+            <img src="prg5.jpg.jpeg">
+          </div>
+          <div class="card-body">
+            <h3>سبايسي دابل</h3>
+            <p>ضعف اللحم، صوص حار، خيار مخلل وبصل كرامليزد</p>
+            <div class="card-footer">
+              <span class="price">109 <small>جنيه</small></span>
+              <button class="add-btn"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="chicken">
+          <div class="card-img">🍗</div>
+          <div class="card-body">
+            <h3>كرسبي تشيكن</h3>
+            <p>دجاج مقرمش بتتبيلة خاصة، مع صوص تارتار</p>
+            <div class="card-footer">
+              <span class="price">79 <small>جنيه</small></span>
+              <button class="add-btn"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="chicken">
+          <div class="card-badge new">جديد</div>
+          <div class="card-img">🍖</div>
+          <div class="card-body">
+            <h3>تشيكن ستريبس</h3>
+            <p>قطع دجاج طويلة مقرمشة مع صوص العسل والخردل</p>
+            <div class="card-footer">
+              <span class="price">69 <small>جنيه</small></span>
+              <button class="add-btn"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="sides">
+          <div class="card-img">🍟</div>
+          <div class="card-body">
+            <h3>فرايز كبير</h3>
+            <p>بطاطس مقرمشة مع ملح البحر وتوابل خاصة</p>
+            <div class="card-footer">
+              <span class="price">29 <small>جنيه</small></span>
+              <button class="add-btn"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="drinks">
+          <div class="card-img">🥤</div>
+          <div class="card-body">
+            <h3>شيك الشيكولاتة</h3>
+            <p>شيك كثيف بالشيكولاتة الداكنة وكريمة طازجة</p>
+            <div class="card-footer">
+              <span class="price">45 <small>جنيه</small></span>
+              <button class="add-btn"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== OFFERS ========== -->
+  <section class="offers" id="offers">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">عروض حصرية</p>
+        <h2 class="section-title">وفّر <span class="accent">أكتر</span></h2>
+      </div>
+      <div class="offers-grid">
+        <div class="offer-card big">
+          <div class="offer-content">
+            <span class="offer-tag">العرض الملكي</span>
+            <h3>ميل للاتنين</h3>
+            <p>برجرين + فرايز كبير + مشروبين</p>
+            <div class="offer-price">
+              <span class="old-price">280 جنيه</span>
+              <span class="new-price">199 جنيه</span>
+            </div>
+            <a href="#order" class="btn btn-primary">احجز العرض</a>
+          </div>
+          <div class="offer-emoji">🎉</div>
+        </div>
+        <div class="offer-card">
+          <div class="offer-content">
+            <span class="offer-tag">فاميلي ديل</span>
+            <h3>عيلة بالكامل</h3>
+            <p>6 برجر + 3 فرايز + 6 مشروبات</p>
+            <div class="offer-price">
+              <span class="new-price">549 جنيه</span>
+            </div>
+            <a href="#order" class="btn btn-outline-light">اطلب دلوقتي</a>
+          </div>
+          <div class="offer-emoji">👨‍👩‍👧‍👦</div>
+        </div>
+        <div class="offer-card">
+          <div class="offer-content">
+            <span class="offer-tag">كومبو الطالب</span>
+            <h3>برجر + فرايز + كولا</h3>
+            <p>الأنسب لك في أي وقت</p>
+            <div class="offer-price">
+              <span class="new-price">99 جنيه</span>
+            </div>
+            <a href="#order" class="btn btn-outline-light">اطلب دلوقتي</a>
+          </div>
+          <div class="offer-emoji">🎒</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <p class="section-tag">من نحن</p>
+        <h2 class="section-title">قصة <span class="accent">فلايم</span></h2>
+        <p class="about-desc">بدأنا رحلتنا عام 2015 بشغف حقيقي لتقديم وجبات سريعة لكن بجودة مطعم فاخر. نؤمن إن كل وجبة لازم تكون تجربة، مش بس أكل.</p>
+        <ul class="about-features">
+          <li><i class="fas fa-check-circle"></i> مكونات طازجة يومياً</li>
+          <li><i class="fas fa-check-circle"></i> توصيل خلال 15 دقيقة</li>
+          <li><i class="fas fa-check-circle"></i> جودة مضمونة أو استرداد المبلغ</li>
+          <li><i class="fas fa-check-circle"></i> أكتر من 10 سنين خبرة</li>
+        </ul>
+      </div>
+      <div class="about-cards">
+        <div class="about-card">
+          <i class="fas fa-fire"></i>
+          <h4>طعم لا يُنسى</h4>
+          <p>وصفات سرية طُوِّرت على مدى سنوات</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-bolt"></i>
+          <h4>سرعة التوصيل</h4>
+          <p>نصلك في أسرع وقت ممكن</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-heart"></i>
+          <h4>بنحب عملاءنا</h4>
+          <p>رضاك هو أولويتنا الأولى دائماً</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-leaf"></i>
+          <h4>مكونات طازجة</h4>
+          <p>نختار أجود المكونات يومياً</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">آراء عملاءنا</p>
+        <h2 class="section-title">بيقولوا <span class="accent">إيه؟</span></h2>
+      </div>
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"أحسن برجر أكلته في حياتي! اللحم طازج والصوص خطير. هطلب تاني وتالت وعاشر!"</p>
+          <div class="reviewer"><div class="avatar">م</div><strong>محمد أحمد</strong></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"التوصيل وصل في 12 دقيقة بالظبط! والأكل لسه ساخن وطازج. شكراً فلايم!"</p>
+          <div class="reviewer"><div class="avatar">س</div><strong>سارة خالد</strong></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"الكرسبي تشيكن ده مش طبيعي! الطحينة معاه تجنن. عيلتي كلها بتطلب منه دايماً."</p>
+          <div class="reviewer"><div class="avatar">ع</div><strong>علي حسن</strong></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"عرض الاتنين ده مبيعاش! الجودة عالية والسعر معقول. أنصح كل الناس."</p>
+          <div class="reviewer"><div class="avatar">ن</div><strong>نور الهدى</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <p class="section-tag">تواصل معنا</p>
+        <h2 class="section-title">احنا <span class="accent">هنا</span></h2>
+        <div class="contact-items">
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <strong>اتصل بنا</strong>
+              <p>01000000000</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>موقعنا</strong>
+              <p>القاهرة، مصر</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>أوقات العمل</strong>
+              <p>يومياً من 10 صباحاً حتى 2 فجراً</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+        <h3>ابعتلنا رسالة</h3>
+        <div class="form-group">
+          <input type="text" placeholder="اسمك" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="رقم تليفونك" required />
+        </div>
+        <div class="form-group">
+          <textarea placeholder="رسالتك..." rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">إرسال <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span>🔥</span> فلايم
+      </div>
+      <p class="footer-copy">© 2025 فلايم. جميع الحقوق محفوظة.</p>
+      <div class="footer-links">
+        <a href="#">سياسة الخصوصية</a>
+        <a href="#">الشروط والأحكام</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart notification -->
+  <div class="cart-toast" id="cartToast">
+    <i class="fas fa-check-circle"></i> تم الإضافة للسلة!
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
